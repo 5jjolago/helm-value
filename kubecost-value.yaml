@@ -456,18 +456,18 @@ remoteWrite:
       password: admin # change me
 
 prometheus:
-  extraScrapeConfigs: |
-    - job_name: kubecost
-      honor_labels: true
-      scrape_interval: 1m
-      scrape_timeout: 60s
-      metrics_path: /metrics
-      scheme: http
-      dns_sd_configs:
-      - names:
-        - kubecost-cost-analyzer.kubecost.svc
-        type: 'A'
-        port: 9003
+  # extraScrapeConfigs: |
+  #   - job_name: kubecost
+  #     honor_labels: true
+  #     scrape_interval: 1m
+  #     scrape_timeout: 60s
+  #     metrics_path: /metrics
+  #     scheme: http
+  #     dns_sd_configs:
+  #     - names:
+  #       - kubecost-cost-analyzer.kubecost.svc
+  #       type: 'A'
+  #       port: 9003
   server:
     # If clusterIDConfigmap is defined, instead use user-generated configmap with key CLUSTER_ID
     # to use as unique cluster ID in kubecost cost-analyzer deployment.
