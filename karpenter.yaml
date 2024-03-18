@@ -482,7 +482,8 @@ spec:
               - key: eks.amazonaws.com/nodegroup
                 operator: In
                 values:
-                - ozzorago-nodegroup2
+                - ozzorago-nodegroup-gravition
+
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
           - labelSelector:
