@@ -368,7 +368,7 @@ ingress:
 #    hosts:
 #      - cost-analyzer.local
 
-nodeSelector: {}
+nodeSelector: {'eks.amazonaws.com/capacityType': 'ON_DEMAND'}
 
 tolerations: []
 #  - key: "key"

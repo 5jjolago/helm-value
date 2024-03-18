@@ -45,6 +45,8 @@ serviceAccount:
 
 replicas: 1
 
+nodeSelector: {'eks.amazonaws.com/capacityType': 'ON_DEMAND'}
+
 ## Create a headless service for the deployment
 headlessService: false
 
